@@ -10,11 +10,15 @@
     <Company>Exercism</Company>    
     <PackageTags>Exercism;Testing</PackageTags>    
     <PackageLicenseExpression>AGPL-3.0-or-later</PackageLicenseExpression>
-    <PackageIcon>https://raw.githubusercontent.com/exercism/website-icons/main/exercism/logo-bordered.png</PackageIcon>
+    <PackageIcon>icon.png</PackageIcon>
     <RepositoryUrl>https://github.com/exercism/dotnet-tests</RepositoryUrl>
     <IncludeSymbols>true</IncludeSymbols>
     <IncludeSource>true</IncludeSource>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="images\icon.png" Pack="true" PackagePath="" />
+  </ItemGroup>
 
 </Project>
