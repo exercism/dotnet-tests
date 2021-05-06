@@ -6,25 +6,18 @@ namespace Exercism.Tests.Tests
     public class TaskAttributeTests
     {
         [Fact]
-        public void AllowsOneDeclaration()
+        public void CanBeUsedOnMethod()
         {
             [Task(1)]
             string TestMethod() => "One";
         }
-        
-        [Fact]
-        public void AllowsMultipleDeclarations()
-        {
-            [Task(1), Task(2), Task(3)]
-            string TestMethod() => "One, Two, Three";
-        }
-        
+
         [Fact]
         public void ThrowsArgumentOutOfRangeExceptionWhenNumberIsZero()
         {
             Assert.Throws<ArgumentOutOfRangeException>(() => new TaskAttribute(0));
         }
-        
+
         [Theory]
         [InlineData(-1)]
         [InlineData(-2)]
