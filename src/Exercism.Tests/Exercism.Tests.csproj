@@ -10,6 +10,7 @@
     <Company>Exercism</Company>    
     <PackageTags>Exercism;Testing</PackageTags>    
     <PackageLicenseExpression>AGPL-3.0-or-later</PackageLicenseExpression>
+    <PackageIcon>https://github.com/exercism/website-icons/blob/main/exercism/logo-icon.svg</PackageIcon>
     <RepositoryUrl>https://github.com/exercism/dotnet-tests</RepositoryUrl>
     <IncludeSymbols>true</IncludeSymbols>
     <IncludeSource>true</IncludeSource>
