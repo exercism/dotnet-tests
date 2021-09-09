@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
     <PackageId>Exercism.Tests</PackageId>
-    <Version>0.1.0-alpha2</Version>
+    <Version>0.1.0-beta1</Version>
     <Title>Exercism Testing</Title>
     <Description>This library adds Exercism-specific functionality related to testing solutions.</Description>    
     <Authors>Erik Schierboom</Authors>
