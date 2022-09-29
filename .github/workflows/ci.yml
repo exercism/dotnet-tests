@@ -11,7 +11,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b # 2.3.5
-      - uses: actions/setup-dotnet@a351d9ea84bc76ec7508debf02a39d88f8b6c0c0 # 1.8.0
+      - uses: actions/setup-dotnet@c7e7147fd3e41056e75a761416c06f5fa781b5fb # 1.8.0
         with:
           dotnet-version: 5.0.202
       - run: dotnet test
