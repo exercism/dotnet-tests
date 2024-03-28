@@ -9,7 +9,7 @@ jobs:
     name: Publish NuGet package
     runs-on: ubuntu-20.04
     steps:
-      - uses: actions/checkout@ac593985615ec2ede58e132d2e21d2b1cbd6127c # 2.3.5
+      - uses: actions/checkout@9bb56186c3b09b4f86b1c65136769dd318469633 # 2.3.5
       - uses: rohith/publish-nuget@c12b8546b67672ee38ac87bea491ac94a587f7cc # 2.5.5
         with:
           PROJECT_FILE_PATH: src/Exercism.Tests/Exercism.Tests.csproj
