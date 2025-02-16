@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
+    <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
     <PackageId>Exercism.Tests</PackageId>
     <Version>0.1.0-beta1</Version>
     <Title>Exercism Testing</Title>
