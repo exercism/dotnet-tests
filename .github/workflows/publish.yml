@@ -2,15 +2,20 @@ name: Publish
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main
+  workflow_dispatch:
 
 jobs:
   publish:
     name: Publish NuGet package
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # 2.3.5
-      - uses: rohith/publish-nuget@c12b8546b67672ee38ac87bea491ac94a587f7cc # 2.5.5
+      - name: Checkout code
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+
+      - name: Publish NuGet package
+        uses: rohith/publish-nuget@c12b8546b67672ee38ac87bea491ac94a587f7cc
         with:
           PROJECT_FILE_PATH: src/Exercism.Tests/Exercism.Tests.csproj
           NUGET_KEY: ${{ secrets.NUGET_API_KEY }}
