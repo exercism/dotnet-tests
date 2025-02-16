@@ -10,8 +10,8 @@ public class UseCultureAttribute : BeforeAfterTestAttribute
     private readonly CultureInfo _culture;
     private readonly CultureInfo _uiCulture;
 
-    private CultureInfo _originalCulture;
-    private CultureInfo _originalUiCulture;
+    private CultureInfo? _originalCulture;
+    private CultureInfo? _originalUiCulture;
 
     public UseCultureAttribute()
         : this(CultureInfo.InvariantCulture, CultureInfo.InvariantCulture)
@@ -45,7 +45,7 @@ public class UseCultureAttribute : BeforeAfterTestAttribute
 
     public override void After(MethodInfo methodUnderTest, IXunitTest test)
     {
-        CultureInfo.CurrentCulture = _originalCulture;
-        CultureInfo.CurrentUICulture = _originalUiCulture;
+        CultureInfo.CurrentCulture = _originalCulture!;
+        CultureInfo.CurrentUICulture = _originalUiCulture!;
     }
 }

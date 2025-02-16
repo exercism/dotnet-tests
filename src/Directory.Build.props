@@ -1,0 +1,10 @@
+<Project>
+  <PropertyGroup>
+    <Authors>Erik Schierboom</Authors>
+    <Company>Exercism</Company>    
+    <PackageTags>Exercism;Testing</PackageTags>    
+    <PackageLicenseExpression>AGPL-3.0-or-later</PackageLicenseExpression>
+    <PackageIcon>icon.png</PackageIcon>
+    <RepositoryUrl>https://github.com/exercism/dotnet-tests</RepositoryUrl>
+  </PropertyGroup>
+</Project>

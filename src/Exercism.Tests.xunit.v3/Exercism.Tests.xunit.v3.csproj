@@ -10,14 +10,8 @@
   <PropertyGroup>
     <PackageId>Exercism.Tests.xunit.v3</PackageId>
     <Version>0.1.0-beta1</Version>
-    <Title>Exercism Testing</Title>
-    <Description>This library adds Exercism-specific functionality related to testing solutions using xUnit v3.</Description>    
-    <Authors>Erik Schierboom</Authors>
-    <Company>Exercism</Company>    
-    <PackageTags>Exercism;Testing</PackageTags>    
-    <PackageLicenseExpression>AGPL-3.0-or-later</PackageLicenseExpression>
-    <PackageIcon>icon.png</PackageIcon>
-    <RepositoryUrl>https://github.com/exercism/dotnet-tests</RepositoryUrl>
+    <Title>Exercism Testing using xUnit v3</Title>
+    <Description>This library adds Exercism-specific functionality related to testing solutions using xUnit v3.</Description>
   </PropertyGroup>
 
   <ItemGroup>
