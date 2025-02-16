@@ -11,6 +11,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{14AF2F5A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercism.Tests.Tests", "tests\Exercism.Tests.Tests\Exercism.Tests.Tests.csproj", "{900E6F72-8D50-466D-A6C4-DA9714F4048C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercism.Tests.xunit.v3", "src\Exercism.Tests.xunit.v3\Exercism.Tests.xunit.v3.csproj", "{90C6D541-8975-4176-A164-3C119CDE56C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercism.Tests.xunit.v3.Tests", "tests\Exercism.Tests.xunit.v3.Tests\Exercism.Tests.xunit.v3.Tests.csproj", "{B3A9A059-8D28-4841-9CF8-323EFBFF41C9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,9 +32,19 @@ Global
 		{900E6F72-8D50-466D-A6C4-DA9714F4048C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{900E6F72-8D50-466D-A6C4-DA9714F4048C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{900E6F72-8D50-466D-A6C4-DA9714F4048C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90C6D541-8975-4176-A164-3C119CDE56C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90C6D541-8975-4176-A164-3C119CDE56C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90C6D541-8975-4176-A164-3C119CDE56C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90C6D541-8975-4176-A164-3C119CDE56C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3A9A059-8D28-4841-9CF8-323EFBFF41C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3A9A059-8D28-4841-9CF8-323EFBFF41C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3A9A059-8D28-4841-9CF8-323EFBFF41C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3A9A059-8D28-4841-9CF8-323EFBFF41C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{3FD7D5E5-05AC-4B9D-8062-63430962A4BE} = {2DA5F395-76DA-446D-99AC-4F56ED0AFE01}
 		{900E6F72-8D50-466D-A6C4-DA9714F4048C} = {14AF2F5A-6AB7-480D-9790-7A00C9A72C20}
+		{90C6D541-8975-4176-A164-3C119CDE56C1} = {2DA5F395-76DA-446D-99AC-4F56ED0AFE01}
+		{B3A9A059-8D28-4841-9CF8-323EFBFF41C9} = {14AF2F5A-6AB7-480D-9790-7A00C9A72C20}
 	EndGlobalSection
 EndGlobal

@@ -26,8 +26,8 @@ namespace Exercism.Tests.Tests
         [UseCulture]
         public void DontSpecifyCulture()
         {
-            Assert.Equal(CultureInfo.InvariantCulture, CultureInfo.CurrentCulture);
-            Assert.Equal(CultureInfo.InvariantCulture, CultureInfo.CurrentUICulture);
+            Assert.Equal(CultureInfo.InvariantCulture.Name, CultureInfo.CurrentCulture.Name);
+            Assert.Equal(CultureInfo.InvariantCulture.Name, CultureInfo.CurrentUICulture.Name);
         }
         
         [Fact]

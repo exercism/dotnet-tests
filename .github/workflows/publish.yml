@@ -20,3 +20,8 @@ jobs:
           PROJECT_FILE_PATH: src/Exercism.Tests/Exercism.Tests.csproj
           NUGET_KEY: ${{ secrets.NUGET_API_KEY }}
           INCLUDE_SYMBOLS: true
+      - uses: rohith/publish-nuget@c12b8546b67672ee38ac87bea491ac94a587f7cc # 2.5.5
+        with:
+          PROJECT_FILE_PATH: src/Exercism.Tests.xunit.v3/Exercism.Tests.xunit.v3.csproj
+          NUGET_KEY: ${{ secrets.NUGET_API_KEY }}
+          INCLUDE_SYMBOLS: true
