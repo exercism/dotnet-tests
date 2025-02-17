@@ -1,8 +1,7 @@
 .vscode/
 .vs/
 .idea/
-
+build/
 bin/
 obj/
-
 *.DotSettings.user

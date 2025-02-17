@@ -14,14 +14,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
 
-      - name: Publish NuGet package
-        uses: rohith/publish-nuget@c12b8546b67672ee38ac87bea491ac94a587f7cc
-        with:
-          PROJECT_FILE_PATH: src/Exercism.Tests/Exercism.Tests.csproj
-          NUGET_KEY: ${{ secrets.NUGET_API_KEY }}
-          INCLUDE_SYMBOLS: true
-      - uses: rohith/publish-nuget@c12b8546b67672ee38ac87bea491ac94a587f7cc # 2.5.5
-        with:
-          PROJECT_FILE_PATH: src/Exercism.Tests.xunit.v3/Exercism.Tests.xunit.v3.csproj
-          NUGET_KEY: ${{ secrets.NUGET_API_KEY }}
-          INCLUDE_SYMBOLS: true
+      - name: Publish NuGet packagse
+        run: |
+          dotnet pack --configuration release --include-symbols --output build src/Exercism.Tests
+          dotnet pack --configuration release --include-symbols --output build src/Exercism.Tests.xunit.v3 
+          dotnet nuget push --skip-duplicate --api-key ${{ secrets.NUGET_API_KEY }} --source https://www.nuget.org "**/*.nupkg"
