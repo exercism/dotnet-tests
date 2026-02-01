@@ -18,7 +18,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
       - name: Checkout code
-        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
 
       - name: Setup .NET
         uses: actions/setup-dotnet@3951f0dfe7a07e2313ec93c75700083e2005cbab
