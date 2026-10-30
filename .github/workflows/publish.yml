@@ -14,8 +14,15 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
 
-      - name: Publish NuGet packagse
+      # Get a short-lived NuGet API key
+      - name: NuGet login (OIDC → temp API key)
+        uses: NuGet/login@8d196754b4036150537f80ac539e15c2f1028841
+        id: login
+        with:
+          user: ${{ secrets.NUGET_USER }}
+
+      - name: Publish NuGet packages
         run: |
           dotnet pack --configuration release --include-symbols --output build src/Exercism.Tests
           dotnet pack --configuration release --include-symbols --output build src/Exercism.Tests.xunit.v3 
-          dotnet nuget push --skip-duplicate --api-key ${{ secrets.NUGET_API_KEY }} --source https://www.nuget.org "**/*.nupkg"
+          dotnet nuget push --skip-duplicate --api-key ${{steps.login.outputs.NUGET_API_KEY}} --source https://www.nuget.org "**/*.nupkg"
